@@ -11,6 +11,13 @@ body {
 }
 
 .container {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  resize: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
