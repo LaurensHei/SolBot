@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("RobotoMono500.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  background-color: black;
+  font-family: "Roboto Mono";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 100%;
+  align-content: center;
+  width: 100%;
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    color: white;
+  }
+  p {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    color: #16f195;
+  }
+}
