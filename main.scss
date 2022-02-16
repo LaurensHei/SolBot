@@ -3,10 +3,14 @@
   src: url("RobotoMono500.ttf");
 }
 
+$background_color: #000;
+$text_color: #fff;
+$accent_color: #16f195;
+
 html,
 body {
   height: 100%;
-  background-color: black;
+  background-color: $background_color;
   font-family: "Roboto Mono";
 }
 
@@ -32,12 +36,18 @@ body {
     font-size: 5rem;
     text-align: center;
     margin: 0;
-    color: white;
+    color: $text_color;
   }
   p {
     font-size: 2rem;
     text-align: center;
     margin: 0;
-    color: #16f195;
+    color: $accent_color;
+  }
+  img {
+    max-width: 13rem;
+    max-height: 13rem;
+    margin: 0 auto;
+    margin-top: 3.4rem;
   }
 }
