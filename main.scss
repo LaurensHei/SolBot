@@ -3,8 +3,9 @@
   src: url("RobotoMono500.ttf");
 }
 
-$background_color: #000;
-$background_color_2: #353535;
+$background_color: rgb(22, 22, 22);
+$background_color_2: #272727;
+$background_color_3: #1d1d1d;
 $text_color: #fff;
 $text_color_2: rgba(175, 175, 175, 0.933);
 $accent_color: #00ffbd;
@@ -76,7 +77,7 @@ p {
     height: 5rem;
     display: flex;
     justify-content: space-between;
-    padding: 0 $bo;
+    padding: 0 $border_padding;
     li {
       display: flex;
       align-items: center;
@@ -114,15 +115,17 @@ p {
 }
 
 #landing {
-  height: 90%;
-  margin-top: 3rem;
-  .img_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 40vw;
-    }
+  height: 110%;
+  background-image: url("/img/landing.png");
+  background-position: top;
+  background-size: 90%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .scroll-arrow {
+    scale: (1.7);
   }
 }
 
@@ -161,7 +164,7 @@ section {
 }
 
 .grid_item_right {
-  margin: 3rem $border_padding;
+  margin: 5rem $border_padding;
   height: 40%;
   display: grid;
   grid-template-columns: 60% 40%;
@@ -175,7 +178,7 @@ section {
 }
 
 .grid_item_left {
-  margin: 3rem $border_padding;
+  margin: 5rem $border_padding;
   height: 40%;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -211,7 +214,7 @@ section {
 
   img {
     width: 100%;
-    max-width: 20rem;
+    max-width: 15rem;
     transition: 0.5s ease;
   }
 
@@ -247,6 +250,7 @@ section {
   height: 5rem;
 
   ul {
+    padding: 0;
     color: $text_color;
     list-style: none;
     height: 5rem;

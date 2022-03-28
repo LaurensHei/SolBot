@@ -11,7 +11,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background-color: #000;
+  background-color: #161616;
   font-family: "Roboto Mono";
 }
 
@@ -67,7 +67,6 @@ p {
 }
 
 .container img {
-  width: 80%;
   max-width: 13rem;
   margin: 0 auto;
   margin-top: 3.4rem;
@@ -75,7 +74,7 @@ p {
 
 .navbar {
   width: 100%;
-  background-color: #000;
+  background-color: #161616;
   height: 5rem;
   border-bottom: 1pt solid #fff;
 }
@@ -144,24 +143,24 @@ p {
 }
 
 #landing {
-  height: 90%;
-  margin-top: 3rem;
-}
-
-#landing .img_wrapper {
+  height: 110%;
+  background-image: url("/img/landing.png");
+  background-position: top;
+  background-size: 90%;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-#landing .img_wrapper img {
-  width: 40vw;
+#landing .scroll-arrow {
+  scale: 1.7;
 }
 
 #video {
@@ -174,7 +173,7 @@ p {
 }
 
 #video .video_container {
-  width: 50vw;
+  width: 80%;
   height: 28vw;
   margin: auto;
 }
@@ -196,7 +195,7 @@ section {
 }
 
 .grid_item_right {
-  margin: 3rem 7vw;
+  margin: 5rem 7vw;
   height: 40%;
   display: -ms-grid;
   display: grid;
@@ -214,7 +213,7 @@ section {
 }
 
 .grid_item_left {
-  margin: 3rem 7vw;
+  margin: 5rem 7vw;
   height: 40%;
   display: -ms-grid;
   display: grid;
@@ -269,7 +268,7 @@ section {
 
 .grid_item_image img {
   width: 100%;
-  max-width: 20rem;
+  max-width: 15rem;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -305,11 +304,12 @@ section {
 }
 
 .footer {
-  background-color: #000;
+  background-color: #161616;
   height: 5rem;
 }
 
 .footer ul {
+  padding: 0;
   color: #fff;
   list-style: none;
   height: 5rem;

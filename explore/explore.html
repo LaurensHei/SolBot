@@ -12,76 +12,200 @@
       <ul>
         <li>
           <div class="logo_container">
-
-                <h2>SolBot</h2>
-                
-
-            
+            <h2>SolBot</h2>
           </div>
         </li>
         <div class="items">
-            <li><a href="#specs">Documentary</a></li> 
-            <li><a href="#about">About</a></li>
+          <li><a href="#specs">Documentary</a></li>
+          <li><a href="#about">About</a></li>
         </div>
       </ul>
-
     </div>
 
     <section id="landing">
-      <div class="img_wrapper">
-        <img src="../img/bot.png" alt="">
+      <div class="scroll-arrow">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="../down-arrow.json"
+          background="transparent"
+          speed="0.5"
+          style="width: 500px"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
-      
     </section>
 
     <section id="video">
       <h1 class="section_title">Video</h1>
       <div class="video_container">
-        <embed src="https://www.youtube.com/embed/XW8TCRcuYmI" type="">
+        <embed src="https://www.youtube.com/embed/XW8TCRcuYmI" type="" />
       </div>
-      
     </section>
 
     <section id="specs">
       <h1 class="section_title">Technische Daten</h1>
 
-        <div class="grid_item_right">
-            <div class="grid_item_title">
-                <h1>Ballschale</h1>
-            </div>
-            <div class="grid_item_image">
-                <img src="../img/dummy_1.png" alt="">
-                <div class="hover_container">   
-                    <a href="">.SCAD Datei</a>
-                </div>
-            </div>
-            <div class="grid_item_text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae minima quasi beatae ut, praesentium at eligendi quibusdam. Nam saepe doloremque eaque? Aperiam, provident tempore dicta inventore exercitationem voluptatum sequi impedit. lorem</p>
-            </div>
+      <div class="grid_item_right">
+        <div class="grid_item_title">
+          <h1>Ballschale</h1>
         </div>
-
-        <div class="grid_item_left">
-            <div class="grid_item_title">
-                <h1>Kompass</h1>
-            </div>
-            <div class="grid_item_image">
-                <img src="../img/dummy_2.png" alt="">
-                <div class="hover_container">
-                    <a href="">Link</a>
-                </div>
-            </div>
-            <div class="grid_item_text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae minima quasi beatae ut, praesentium at eligendi quibusdam. Nam saepe doloremque eaque? Aperiam, provident tempore dicta inventore exercitationem voluptatum sequi impedit.</p>
-            </div>
+        <div class="grid_item_image">
+          <img src="../img/components/megaballschale.png" alt="" />
+          <div class="hover_container">
+            <a href="">.SCAD Datei</a>
+          </div>
         </div>
+        <div class="grid_item_text">
+          <p>Die Ballschale unseres Bots ist aus PLA gedruckt. Mit ihrer passgenauen Form kann der Ball sicher ins Tor befördert werden. An den Seiten befindet sich die Lichtschranke, bestehend aus einer Leuchtdiode und einer Photodiode, welche erkennt, ob sich ein Ball in der Ballschale befindet.</p>
+        </div>
+      </div>
 
+      <div class="grid_item_left">
+        <div class="grid_item_title">
+          <h1>Kompass</h1>
+        </div>
+        <div class="grid_item_image">
+          <img src="../img/components/cmps14.png" alt="" />
+          <div class="hover_container">
+            <a href="">Link</a>
+          </div>
+        </div>
+        <div class="grid_item_text">
+          <p>
+            Der Kompass CMPS14 befindet sich von allen Komponenten (ausgenommen der Pixy) am obersten Punkt des Bots. Dies hat den Grund, dass dort nur wenige elektrische Felder den Kompass stören.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_item_right">
+        <div class="grid_item_title">
+          <h1>Pixy 2.1</h1>
+        </div>
+        <div class="grid_item_image">
+          <img src="../img/components/pixie.png" alt="" />
+          <div class="hover_container">
+            <a href="">Link</a>
+          </div>
+        </div>
+        <div class="grid_item_text">
+          <p>
+            Die Pixy 2.1 vereint die Funktionen der Pixy 1 und der Pixy 2. Mit einem großen Objektiv und starker Leistung kann sie die Tore mit 60FPS erkennen.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_item_left">
+        <div class="grid_item_title">
+          <h1>Motortreiber</h1>
+        </div>
+        <div class="grid_item_image">
+          <img src="../img/components/motortreiber.png" alt="" />
+          <div class="hover_container">
+            <a href="">Link</a>
+          </div>
+        </div>
+        <div class="grid_item_text">
+          <p>
+            Die Motortreiber von Maxon steuern die Brushless Motoren. Sie können diese auch während des Standes blockieren, sodass der Bot nicht so einfach von einem anderen weggeschoben werden kann. Außerdem sorgen die Motortreiber dafür, dass die Drehzahl der Motoren konstant bleibt und bei weniger Leistung passen sie diese an.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_item_right">
+        <div class="grid_item_title">
+          <h1>ESP-32</h1>
+        </div>
+        <div class="grid_item_image">
+          <img src="../img/components/esp.png" alt="" />
+          <div class="hover_container">
+            <a href="">Link</a>
+          </div>
+        </div>
+        <div class="grid_item_text">
+          <p>
+            Der ESP-32 läuft mit Arduino. Er hat außerdem einen EEPROM-Speicher, welcher dafür sorgt, dass der Bot nach einem technischen Ausfall nahtlos ohne Eingriff weiterspielen kann. 
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_item_left">
+        <div class="grid_item_title">
+          <h1>Akkuhalter</h1>
+        </div>
+        <div class="grid_item_image">
+          <img src="../img/components/akkuhalter.png" alt="" />
+          <div class="hover_container">
+            <a href="">.SCAD Datei</a>
+          </div>
+        </div>
+        <div class="grid_item_text">
+          <p>
+            Die Akkuhalter wurden von uns designt und mit PLA gedruckt. Der Bot hat insgesamt 3 Akkuhaltern. Diese bestehen aus einer Röhre, welche am Boden eine Feder hat, und einem Deckel, welcher ebenfalls eine Feder verbaut hat. Mit einem Bajonettverschluss üben die Federn ständig Druck auf den Akku aus, um einen Wackelkontakt zu vermeiden. Die in Reihe geschalteten 4V Akkus ergeben insgesamt 12V.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_item_right">
+        <div class="grid_item_title">
+          <h1>I2C-Bus</h1>
+        </div>
+        <div class="grid_item_image">
+          <img src="../img/components/i2c.png" alt="" />
+          <div class="hover_container">
+            <a href="">Link</a>
+          </div>
+        </div>
+        <div class="grid_item_text">
+          <p>
+            Das I2C-Bus Modul, welches im Bot 2x verbaut ist, gibt uns zum Einen die Möglichkeit, den Bot zu starten, den Kompass neu zu setzen und die Torfarbe zu setzen. Dafür sorgen insgesamt 4 Knöpfe und 4 LEDs, welche in verschiedenen Farben beliebige Informationen anzeigen können.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_item_left">
+        <div class="grid_item_title">
+          <h1>Räder</h1>
+        </div>
+        <div class="grid_item_image">
+          <img src="../img/components/rad.png" alt="" />
+          <div class="hover_container">
+            <a href="">Nicht verfügbar</a>
+          </div>
+        </div>
+        <div class="grid_item_text">
+          <p>
+            Die Räder sind aus dem Hause Bohlebots. Im Vergleich zu den klassischen Roboterrädern sind diese zum einen größer, zum anderen sind die kleinen Rädchen versetzt angeordnet. Das sorgt für mehr Grip auf dem Spielfeld.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_item_right">
+        <div class="grid_item_title">
+          <h1>Akku</h1>
+        </div>
+        <div class="grid_item_image">
+          <img src="../img/components/akku.png" alt="" />
+          <div class="hover_container">
+            <a href="">Link</a>
+          </div>
+        </div>
+        <div class="grid_item_text">
+          <p>
+            Die Akkus ______ sind durch unser Akkuhaltersystem binnen Sekunden ausgetauscht und sorgen für genug Leistung, um die Motoren sowie den Kicker, die Pixy etc. mit Strom zu versorgen.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="about">
       <h1 class="section_title">About Us</h1>
       <div class="about_text">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dolor deleniti a dolores laboriosam iure autem, atque facilis dolorem, accusantium, similique fugiat maiores rerum repudiandae ab deserunt iste voluptates vero. <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut quis architecto facilis veritatis magnam dolorum accusamus in aspernatur. Necessitatibus expedita aliquid aut delectus autem odio? Quasi sapiente reprehenderit accusamus!</p>
+        <p>
+          Unser Team besteht aus 4 Personen: Anouk, Laurens, Leo und Jonas. Wir besuchen das Gymnasium in Haan und haben im Rahmen des Projektkurses einen 1vs1 Soccer-Roboter gebaut. 
+          <br>
+          Alle 3D-Druck-Teile unseres Bots hat Anouk designt. Laurens hat den Bot programmiert und größtenteils die Hardware gemacht. Leo hat hin und wieder etwas gelötet und Jonas war auch irgendwie dabei. Er hat z.B. die 3D-Drucker gestartet.
+        </p>
       </div>
     </section>
 
