@@ -10,7 +10,7 @@ $text_color: #fff;
 $text_color_2: rgba(175, 175, 175, 0.933);
 $accent_color: #00ffbd;
 
-$border_padding: 7vw;
+$border_padding: clamp(3rem, 7vw, 5rem);
 
 html {
   scroll-behavior: smooth;
@@ -59,7 +59,7 @@ p {
     color: $accent_color;
   }
   img {
-    max-width: 13rem;
+    width: fit-content;
     margin: 0 auto;
     margin-top: 3.4rem;
   }
@@ -109,7 +109,8 @@ p {
     }
 
     img {
-      width: 2.3rem;
+      width: 3rem;
+      padding-top: 4px;
     }
   }
 }
@@ -118,7 +119,7 @@ p {
   height: 110%;
   background-image: url("/img/landing.png");
   background-position: top;
-  background-size: 90%;
+  background-size: cover;
   background-repeat: no-repeat;
 
   display: flex;
